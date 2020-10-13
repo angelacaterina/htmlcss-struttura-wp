@@ -2,17 +2,11 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Commissioner', sans-serif;
 }
-
+/* utility */
 .float_left{
   float: left;
-}
-
-body{
-  background-image: url(../img/natural-default-pattern.png);
-  background-size: cover;
-  /* background: lightgrey; */
-  padding-top: 20px;
 }
 
 .clearfix{
@@ -21,40 +15,54 @@ body{
   clear: both;
 }
 
+/* /utiluy */
+body{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/natural-default-pattern.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+
 .container{
   width: 80%;
   height: 100vh;
   margin: auto;
-  /* border: 1px solid black; */
 }
 
+/* header */
 #site_header{
   width: 100%;
-  height: 30vh;
+  height: 30%;
   background: grey;
-  /* margin: auto; */
   text-align: center;
   color: white;
   border: 4px solid white;
   background-image: url(../img/natural-default-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 
 h1{
   width: auto;
   height: auto;
+  text-transform: uppercase;
+  font-size: 50px;
   border: 4px solid white;
-  padding: 10px;
+  /* padding: 0 20px; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
 }
+/* /header */
 
-
+/* nav */
 nav{
   width: 100%;
-  height: 5vh;
+  height: 5%;
   background: grey;
   margin: auto;
   text-align: center;
@@ -69,7 +77,6 @@ nav ul li{
 nav ul li:hover{
   background: lightgrey;
   cursor: pointer;
-
 }
 
 nav li a {
@@ -81,10 +88,12 @@ nav li a {
   display: inline-block;
   vertical-align: middle;
 }
+/* /nav */
 
+/* main */
 #main_content{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: auto;
 }
 
@@ -92,18 +101,24 @@ nav li a {
   border-radius: 5px;
   margin-top: 10px;
   display: inline-block;
+  padding: 10px;
 }
 
+/* colonna 1 */
 #column_1{
   width: 20%;
-  height: 50%;
+  height: auto;
   margin-right: 20px;
   background: white;
-
 }
 
-#column_1 > h3{
+#icon i{
+  font-size: 20px;
+  color:orange;
   margin: 5px;
+}
+#column_1 > h3{
+  margin: 0 5px;
 }
 
 .side ul li{
@@ -126,16 +141,19 @@ nav li a {
   text-decoration: underline;
   cursor: pointer;
 }
+/* /colonna 1 */
 
+/* colanna 2 */
 #column_2{
-  width: 50%;
-  height: 40%;
+  width: 55%;
+  height: auto;
   margin-right: 20px;
   background: white;
-
 }
 
 #column_2 > h3{
+  text-shadow: 2px 2px 5px grey;
+  text-transform: uppercase;
   margin: 20px 10px;
 }
 
@@ -143,32 +161,38 @@ nav li a {
   margin: 30px 10px;
   line-height: 150%;
 }
+/* /colanna 2 */
 
+/* colonna 3 */
 #column_3{
-  width: 25%;
+  width: 20%;
   height: 100vh;
+  margin: 0;
 }
 
 .widget{
   width: 100%;
-  height: 30%;
+  height: auto;
   margin-bottom: 20px;
   background: white;
   border-radius: 5px;
-
+  padding: 10px;
 }
 
 .widget > h3{
+  color: grey;
+  text-transform: capitalize;
   margin: 0 10px;
-  padding: 10px;
 }
 
 .widget > p{
   margin: 20px 10px;
-  line-height: 150%;
+  line-height: 100%;
 }
+/* /colanna 3 */
+/* /main */
 
-
+/* footer */
 #site_footer{
   width: 100%;
   height: 15vh;
@@ -178,7 +202,7 @@ nav li a {
 }
 
 .top{
-  width: auto;
+  width: 100%;
   height: 25%;
   margin: 0 5px;
   color: lightgrey;
@@ -188,12 +212,14 @@ nav li a {
 }
 
 .bottom{
-  width: auto;
+  width: 100%;
   height: 75%;
 }
+
 .bottom  span > i{
   display: inline-block;
   font-size: 40px;
   color: lightgrey;
-  margin: 20px 115px;
+  margin: 20px 170px;
 }
+/* /footer */
