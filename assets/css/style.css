@@ -22,7 +22,7 @@ body{
 }
 
 .container{
-  width: 75%;
+  width: 80%;
   height: 100vh;
   margin: auto;
   /* border: 1px solid black; */
@@ -91,7 +91,6 @@ nav li a {
 .column{
   border-radius: 5px;
   margin-top: 10px;
-  background: white;
   display: inline-block;
 }
 
@@ -99,6 +98,8 @@ nav li a {
   width: 20%;
   height: 50%;
   margin-right: 20px;
+  background: white;
+
 }
 
 #column_1 > h3{
@@ -130,11 +131,12 @@ nav li a {
   width: 50%;
   height: 40%;
   margin-right: 20px;
+  background: white;
+
 }
 
 #column_2 > h3{
   margin: 20px 10px;
-
 }
 
 #column_2 > p{
@@ -143,9 +145,29 @@ nav li a {
 }
 
 #column_3{
-  width: 20%;
-  height: 90%;
+  width: 25%;
+  height: 100vh;
 }
+
+.widget{
+  width: 100%;
+  height: 30%;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 5px;
+
+}
+
+.widget > h3{
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.widget > p{
+  margin: 20px 10px;
+  line-height: 150%;
+}
+
 
 #site_footer{
   width: 100%;
